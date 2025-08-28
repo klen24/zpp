@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Уход за зубами для детей 0+ | Методичка для родителей</title>
+  <meta name="description" content="Полное руководство по уходу за зубами детей от 0 лет. Рекомендации, техники чистки, выбор средств гигиены и профилактика." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fcf9fb;
+      --card: #fff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #87c5d3;
+      --accent-2: #f8d7de;
+      --accent-3: #e0eef3;
+      --radius: 16px;
+      --shadow: 0 8px 32px rgba(31, 41, 55, 0.08);
+      --shadow-hover: 0 12px 40px rgba(31, 41, 55, 0.12);
+      --maxw: 1200px;
+      --gradient: linear-gradient(135deg, #f8fbfc 0%, #eef7fa 100%);
+      --gradient-header: linear-gradient(180deg, var(--bg) 0%, #fff 100%);
+    }
+    
+    * { box-sizing: border-box; }
+    
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Nunito', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: var(--gradient-header);
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+    
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 700;
+      color: var(--text);
+      text-align: center;
+    }
+    
+    h2 {
+      margin: 0 0 16px;
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 600;
+      color: var(--text);
+      border-bottom: 2px solid var(--accent-3);
+      padding-bottom: 8px;
+    }
+    
+    h3 {
+      margin: 24px 0 12px;
+      font-size: clamp(18px, 2.5vw, 24px);
+      font-weight: 600;
+      color: #0a7f99;
+    }
+    
+    h4 {
+      margin: 20px 0 8px;
+      font-size: clamp(16px, 2.2vw, 20px);
+      font-weight: 600;
+      color: var(--text);
+    }
+    
+    section {
+      margin-top: 32px;
+    }
+    
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(135, 197, 211, 0.1);
+    }
+    
+    .card:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-2px);
+      transition: all 0.3s ease;
+    }
+    
+    .intro {
+      text-align: center;
+      background: var(--gradient);
+      border: 2px solid var(--accent-3);
+    }
+    
+    .intro p {
+      font-size: 18px;
+      color: var(--text);
+      margin: 0;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .product-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    @media (max-width: 768px) {
+      .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 16px;
+      }
+    }
+    
+    .product {
+      background: var(--gradient);
+      border: 1px solid var(--accent-3);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .product:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(135, 197, 211, 0.2);
+    }
+    
+    picture {
+      display: block;
+      width: 160px;
+      height: 160px;
+      margin: 0 auto 16px;
+      background: #fff;
+      border: 1px solid var(--accent-3);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    img.product-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    
+    .name {
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    
+    .note {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    
+    .muted {
+      color: var(--muted);
+    }
+    
+    .highlight {
+      background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+      border: 1px solid #ffd43b;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+    
+    .highlight h4 {
+      color: #856404;
+      margin-top: 0;
+    }
+    
+    .highlight p {
+      color: #856404;
+      margin: 0;
+    }
+    
+    .warning {
+      background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+      border: 1px solid #dc3545;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+    
+    .warning h4 {
+      color: #721c24;
+      margin-top: 0;
+    }
+    
+    .warning p {
+      color: #721c24;
+      margin: 0;
+    }
+    
+    .info {
+      background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+      border: 1px solid #17a2b8;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+    
+    .info h4 {
+      color: #0c5460;
+      margin-top: 0;
+    }
+    
+    .info p {
+      color: #0c5460;
+      margin: 0;
+    }
+    
+    ul, ol {
+      padding-left: 24px;
+      margin: 16px 0;
+    }
+    
+    li {
+      margin-bottom: 8px;
+    }
+    
+    .age-section {
+      border-left: 4px solid var(--accent);
+      padding-left: 20px;
+      margin: 32px 0;
+    }
+    
+    .footer-note {
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 40px;
+      padding: 20px;
+      background: var(--gradient);
+      border-radius: var(--radius);
+      border: 1px solid var(--accent-3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="card intro">
+      <h1>Уход за зубами для детей 0+</h1>
+      <p>Полное руководство для молодых родителей по правильному уходу за зубами малышей с первых дней жизни</p>
+    </header>
+
+    <!-- Основные принципы -->
+    <section class="card">
+      <h2>Основные принципы ухода за зубами</h2>
+      
+      <div class="info">
+        <h4>🎯 Главная цель</h4>
+        <p>Формирование здоровых привычек гигиены полости рта с самого раннего возраста для предотвращения кариеса и других стоматологических проблем.</p>
+      </div>
+
+      <h3>Ключевые моменты:</h3>
+      <ul>
+        <li><strong>Начинайте с рождения</strong> — уход за полостью рта начинается до появления первых зубов</li>
+        <li><strong>Регулярность</strong> — чистка должна стать ежедневной привычкой</li>
+        <li><strong>Правильная техника</strong> — важно научить ребенка правильным движениям</li>
+        <li><strong>Выбор средств</strong> — использование подходящих по возрасту средств гигиены</li>
+        <li><strong>Контроль родителей</strong> — до 7-8 лет дети нуждаются в помощи взрослых</li>
+      </ul>
+    </section>
+
+    <!-- Уход по возрастам -->
+    <section class="card">
+      <h2>Уход за зубами по возрастам</h2>
+      
+      <div class="age-section">
+        <h3>0-6 месяцев (до появления зубов)</h3>
+        <div class="highlight">
+          <h4>📋 Что делать:</h4>
+          <ul>
+            <li>После каждого кормления протирайте десны и язык влажной марлей</li>
+            <li>Используйте специальные салфетки для полости рта младенцев</li>
+            <li>Приучайте к ощущению чистоты во рту</li>
+            <li>Регулярно осматривайте ротовую полость</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="age-section">
+        <h3>6-12 месяцев (первые зубы)</h3>
+        <div class="highlight">
+          <h4>📋 Что делать:</h4>
+          <ul>
+            <li>Начинайте использовать детскую зубную щетку с мягкой щетиной</li>
+            <li>Чистите зубы 2 раза в день (утром и вечером)</li>
+            <li>Используйте детскую пасту без фтора (0-3 года)</li>
+            <li>Показывайте ребенку процесс чистки на себе</li>
+            <li>Делайте чистку в игровой форме</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="age-section">
+        <h3>1-3 года</h3>
+        <div class="highlight">
+          <h4>📋 Что делать:</h4>
+          <ul>
+            <li>Чистите зубы вместе с ребенком</li>
+            <li>Используйте пасту с фтором (если рекомендует стоматолог)</li>
+            <li>Приучайте к полосканию рта</li>
+            <li>Ограничивайте сладкие напитки и перекусы</li>
+            <li>Первый визит к стоматологу в 1 год</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="age-section">
+        <h3>3-6 лет</h3>
+        <div class="highlight">
+          <h4>📋 Что делать:</h4>
+          <ul>
+            <li>Ребенок может чистить зубы самостоятельно под контролем</li>
+            <li>Используйте пасту с фтором (1000-1450 ppm)</li>
+            <li>Учите правильной технике чистки</li>
+            <li>Применяйте зубную нить для очистки межзубных промежутков</li>
+            <li>Регулярные визиты к стоматологу каждые 6 месяцев</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="age-section">
+        <h3>6+ лет</h3>
+        <div class="highlight">
+          <h4>📋 Что делать:</h4>
+          <ul>
+            <li>Самостоятельная чистка зубов</li>
+            <li>Использование пасты с фтором</li>
+            <li>Применение зубной нити</li>
+            <li>Контроль качества чистки</li>
+            <li>Профилактические осмотры у стоматолога</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Техника чистки -->
+    <section class="card">
+      <h2>Правильная техника чистки зубов</h2>
+      
+      <div class="info">
+        <h4>🦷 Метод "Круговых движений"</h4>
+        <p>Самый эффективный способ чистки зубов для детей и взрослых.</p>
+      </div>
+
+      <h3>Пошаговая инструкция:</h3>
+      <ol>
+        <li><strong>Намочите щетку</strong> теплой водой</li>
+        <li><strong>Нанесите пасту</strong> размером с горошину (для детей до 3 лет — размером с рисовое зерно)</li>
+        <li><strong>Расположите щетку</strong> под углом 45° к поверхности зубов</li>
+        <li><strong>Делайте круговые движения</strong> от десны к краю зуба</li>
+        <li><strong>Чистите все поверхности:</strong>
+          <ul>
+            <li>Внешнюю поверхность (щечную)</li>
+            <li>Внутреннюю поверхность (язычную)</li>
+            <li>Жевательную поверхность</li>
+          </ul>
+        </li>
+        <li><strong>Время чистки</strong> — минимум 2 минуты</li>
+        <li><strong>Прополощите рот</strong> теплой водой</li>
+      </ol>
+
+      <div class="warning">
+        <h4>⚠️ Важные моменты:</h4>
+        <ul>
+          <li>Не давите сильно на щетку — это может повредить десны</li>
+          <li>Меняйте щетку каждые 3 месяца</li>
+          <li>Храните щетку в вертикальном положении</li>
+          <li>Не делитесь зубными щетками</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Выбор средств гигиены -->
+    <section class="card">
+      <h2>Выбор средств гигиены</h2>
+      
+      <h3>Зубные щетки</h3>
+      <div class="grid">
+        <div class="product">
+          <h4>0-2 года</h4>
+          <ul>
+            <li>Мягкая щетина</li>
+            <li>Маленькая головка</li>
+            <li>Толстая ручка для удобства родителей</li>
+            <li>Безопасные материалы</li>
+          </ul>
+        </div>
+        <div class="product">
+          <h4>2-6 лет</h4>
+          <ul>
+            <li>Мягкая или средней жесткости щетина</li>
+            <li>Средняя головка</li>
+            <li>Яркий дизайн</li>
+            <li>Удобная ручка для детской руки</li>
+          </ul>
+        </div>
+        <div class="product">
+          <h4>6+ лет</h4>
+          <ul>
+            <li>Средней жесткости щетина</li>
+            <li>Стандартная головка</li>
+            <li>Эргономичная ручка</li>
+            <li>Возможность выбора дизайна</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Зубные пасты</h3>
+      <div class="info">
+        <h4>💡 Критерии выбора:</h4>
+        <ul>
+          <li><strong>Возрастная маркировка</strong> — обязательно учитывайте возраст ребенка</li>
+          <li><strong>Содержание фтора</strong> — зависит от возраста и рекомендаций стоматолога</li>
+          <li><strong>Вкус</strong> — должен нравиться ребенку</li>
+          <li><strong>Безопасность</strong> — отсутствие вредных компонентов</li>
+          <li><strong>Эффективность</strong> — защита от кариеса</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Рекомендуемые зубные пасты -->
+    <section class="card">
+      <h2>Рекомендуемые зубные пасты по возрастам</h2>
+      
+      <div class="info">
+        <h4>💡 Как выбрать пасту:</h4>
+        <p>При выборе зубной пасты для ребенка обязательно учитывайте возраст, состав и рекомендации стоматолога. Все представленные пасты соответствуют международным стандартам безопасности.</p>
+      </div>
+
+      <div class="age-section">
+        <h3>0–3 года</h3>
+        
+        <h4>С кальцием</h4>
+        <div class="product-grid">
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/от%200%20до%203х%20лет/С%20кальцием/birepear%20KIDS%200-6.webp" alt="Biorepair Kids 0-6" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Biorepair Kids 0–6</div>
+            <div class="note">с кальцием</div>
+          </div>
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/от%200%20до%203х%20лет/С%20кальцием/PRESIDENT%20baby%20со%20вкусом%20малины%200-3.jpg" alt="President Baby со вкусом малины 0–3" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">President Baby со вкусом малины 0–3</div>
+            <div class="note">с кальцием</div>
+          </div>
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/от%200%20до%203х%20лет/С%20кальцием/ROCS%20baby%200-3.jpg" alt="R.O.C.S. Baby 0–3" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">R.O.C.S. Baby 0–3</div>
+            <div class="note">с кальцием</div>
+          </div>
+        </div>
+
+        <h4>С фторидом 250–500–1000 ppm</h4>
+        <div class="product-grid">
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/от%200%20до%203х%20лет/С%20фторидом%20250-500-1000%20PPM/edel%2Bwhite%207%20fruchtli.png" alt="Edel+White 7 Fruchtli" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Edel+White 7 Fruchtli</div>
+            <div class="note">с фторидом</div>
+          </div>
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/от%200%20до%203х%20лет/С%20фторидом%20250-500-1000%20PPM/elmex%200-6.png" alt="Elmex 0–6" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Elmex 0–6</div>
+            <div class="note">с фторидом</div>
+          </div>
+        </div>
+
+        <h4>Комплексного действия</h4>
+        <div class="product-grid">
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/от%200%20до%203х%20лет/Комплексного%20действия/apadent%20baby%20со%20вкусом%20клубники.webp" alt="Apadent Baby со вкусом клубники" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Apadent Baby со вкусом клубники</div>
+            <div class="note">комплексное действие</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="age-section">
+        <h3>3–7 лет</h3>
+        
+        <h4>С фторидом 250–500–1000 ppm</h4>
+        <div class="product-grid">
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/3-7%20лет/С%20фторидом%20250-500-1000%20PPM%203-7%20лет/brush-baby%20350-1000%20ppm_фторид.png" alt="Brush-Baby с фторидом 350-1000 ppm" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Brush-Baby с фторидом 350-1000 ppm</div>
+            <div class="note">с фторидом</div>
+          </div>
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/3-7%20лет/С%20фторидом%20250-500-1000%20PPM%203-7%20лет/ROCS%202%20kIDS%20350-1000%20ppm_фторид.webp" alt="R.O.C.S. Kids 350-1000 ppm фторид" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">R.O.C.S. Kids 350-1000 ppm фторид</div>
+            <div class="note">с фторидом</div>
+          </div>
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/3-7%20лет/С%20фторидом%20250-500-1000%20PPM%203-7%20лет/curaprox%20350-1000%20ppm_фторид.png" alt="Curaprox 350-1000 ppm фторид" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Curaprox 350-1000 ppm фторид</div>
+            <div class="note">с фторидом</div>
+          </div>
+        </div>
+
+        <h4>С кальцием</h4>
+        <div class="product-grid">
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/3-7%20лет/С%20кальцием%203-7%20лет/President%20baby%20со%20вкусом%20клубники%203-6.avif" alt="President Baby со вкусом клубники 3–6" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">President Baby со вкусом клубники 3–6</div>
+            <div class="note">с кальцием</div>
+          </div>
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/3-7%20лет/С%20кальцием%203-7%20лет/ROCS%20KIDS%20SWEET%202-6.jpg" alt="R.O.C.S. Kids Sweet 2–6" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">R.O.C.S. Kids Sweet 2–6</div>
+            <div class="note">с кальцием</div>
+          </div>
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/3-7%20лет/С%20кальцием%203-7%20лет/SPLAT%20KIDS%203-6.webp" alt="SPLAT Kids 3–6" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">SPLAT Kids 3–6</div>
+            <div class="note">с кальцием</div>
+          </div>
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/3-7%20лет/С%20кальцием%203-7%20лет/APDENT%20BABY%20со%20вкусом%20клубники%20и%20винограда.png" alt="Apadent Baby со вкусом клубники и винограда" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Apadent Baby со вкусом клубники и винограда</div>
+            <div class="note">с кальцием</div>
+          </div>
+        </div>
+
+        <h4>Комплексного действия</h4>
+        <div class="product-grid">
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/3-7%20лет/Комплексного%20действия%203-7%20лет/APDENT%20BABY%20со%20вкусом%20клубники%20и%20винограда.webp" alt="Apadent Baby со вкусом клубники и винограда" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Apadent Baby со вкусом клубники и винограда</div>
+            <div class="note">комплексное действие</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="age-section">
+        <h3>7+ лет</h3>
+        
+        <h4>С фторидом 1000–1450 ppm</h4>
+        <div class="product-grid">
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/7%2B/С%20фторидом%201000-1450%20PPM/CURAPROX%20ENZYCAL%201450.webp" alt="Curaprox Enzycal 1450" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Curaprox Enzycal 1450</div>
+            <div class="note">с фторидом</div>
+          </div>
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/7%2B/С%20фторидом%201000-1450%20PPM/ELMEX%20JUNIOR%207-12.webp" alt="Elmex Junior 7–12" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Elmex Junior 7–12</div>
+            <div class="note">с фторидом</div>
+          </div>
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/7%2B/С%20фторидом%201000-1450%20PPM/MIRAFLOUR%20C.png" alt="Mirafluor C" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Mirafluor C</div>
+            <div class="note">с фторидом</div>
+          </div>
+        </div>
+
+        <h4>С кальцием</h4>
+        <div class="product-grid">
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/7%2B/С%20кальцием/BIOREPAIR%20JUNIOR%207-14.png" alt="Biorepair Junior 7–14" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Biorepair Junior 7–14</div>
+            <div class="note">с кальцием</div>
+          </div>
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/7%2B/С%20кальцием/ROCS%20JUNIOR%206-12.png" alt="R.O.C.S. Junior 6–12" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">R.O.C.S. Junior 6–12</div>
+            <div class="note">с кальцием</div>
+          </div>
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/7%2B/С%20кальцием/Splat%20JUNIOR%207-11.png" alt="SPLAT Junior 7–11" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">SPLAT Junior 7–11</div>
+            <div class="note">с кальцием</div>
+          </div>
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/7%2B/С%20кальцием/APDENT%20BABY%20со%20вкусом%20клубники%20и%20винограда.png" alt="Apadent Baby со вкусом клубники и винограда" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Apadent Baby со вкусом клубники и винограда</div>
+            <div class="note">с кальцием</div>
+          </div>
+        </div>
+
+        <h4>Комплексного действия</h4>
+        <div class="product-grid">
+          <div class="product">
+            <picture>
+              <img class="product-img" src="https://raw.githubusercontent.com/klen24/zpp/main/Image/7%2B/Комплексного%20действия/APDENT%20BABY%20со%20вкусом%20клубники%20и%20винограда.webp" alt="Apadent Baby со вкусом клубники и винограда" loading="lazy" width="160" height="160" />
+            </picture>
+            <div class="name">Apadent Baby со вкусом клубники и винограда</div>
+            <div class="note">комплексное действие</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Профилактика и питание -->
+    <section class="card">
+      <h2>Профилактика кариеса и правильное питание</h2>
+      
+      <div class="info">
+        <h4>🍎 Питание для здоровья зубов</h4>
+        <p>Правильное питание играет важную роль в профилактике кариеса и укреплении зубов.</p>
+      </div>
+
+      <h3>Рекомендуемые продукты:</h3>
+      <div class="grid">
+        <div class="product">
+          <h4>Молочные продукты</h4>
+          <ul>
+            <li>Молоко</li>
+            <li>Творог</li>
+            <li>Сыр</li>
+            <li>Йогурт</li>
+          </ul>
+        </div>
+        <div class="product">
+          <h4>Овощи и фрукты</h4>
+          <ul>
+            <li>Морковь</li>
+            <li>Яблоки</li>
+            <li>Огурцы</li>
+            <li>Зелень</li>
+          </ul>
+        </div>
+        <div class="product">
+          <h4>Белковые продукты</h4>
+          <ul>
+            <li>Рыба</li>
+            <li>Мясо</li>
+            <li>Яйца</li>
+            <li>Орехи</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="warning">
+        <h4>⚠️ Ограничить или исключить:</h4>
+        <ul>
+          <li>Сладкие газированные напитки</li>
+          <li>Конфеты и леденцы</li>
+          <li>Сладкие соки</li>
+          <li>Частые перекусы сладким</li>
+        </ul>
+      </div>
+
+      <h3>Дополнительные рекомендации:</h3>
+      <ul>
+        <li><strong>Питьевой режим</strong> — достаточное количество воды</li>
+        <li><strong>Режим питания</strong> — 3 основных приема пищи + 1-2 перекуса</li>
+        <li><strong>Полоскание рта</strong> — после еды водой</li>
+        <li><strong>Жевательная резинка</strong> — без сахара, не более 10-15 минут</li>
+      </ul>
+    </section>
+
+    <!-- Визиты к стоматологу -->
+    <section class="card">
+      <h2>Регулярные визиты к стоматологу</h2>
+      
+      <div class="highlight">
+        <h4>📅 График посещений:</h4>
+        <ul>
+          <li><strong>Первый визит</strong> — в 1 год</li>
+          <li><strong>Регулярные осмотры</strong> — каждые 6 месяцев</li>
+          <li><strong>Профилактические процедуры</strong> — по рекомендации врача</li>
+          <li><strong>Экстренные визиты</strong> — при жалобах или травмах</li>
+        </ul>
+      </div>
+
+      <h3>Что включает профилактический осмотр:</h3>
+      <ul>
+        <li>Осмотр полости рта и зубов</li>
+        <li>Оценка гигиены</li>
+        <li>Рекомендации по уходу</li>
+        <li>Профессиональная чистка (при необходимости)</li>
+        <li>Фторирование (по показаниям)</li>
+        <li>Герметизация фиссур (по показаниям)</li>
+      </ul>
+
+      <div class="info">
+        <h4>💡 Советы для первого визита:</h4>
+        <ul>
+          <li>Выберите детского стоматолога</li>
+          <li>Подготовьте ребенка психологически</li>
+          <li>Возьмите любимую игрушку</li>
+          <li>Не пугайте ребенка стоматологом</li>
+          <li>Объясните, что это полезно для здоровья</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Важные моменты -->
+    <section class="card">
+      <h2>Важные моменты для родителей</h2>
+      
+      <div class="warning">
+        <h4>⚠️ Что делать НЕЛЬЗЯ:</h4>
+        <ul>
+          <li>Давать ребенку сладкие напитки на ночь</li>
+          <li>Пропускать чистку зубов</li>
+          <li>Использовать взрослые средства гигиены</li>
+          <li>Игнорировать жалобы на боль</li>
+          <li>Откладывать визит к стоматологу</li>
+        </ul>
+      </div>
+
+      <div class="highlight">
+        <h4>✅ Что делать НУЖНО:</h4>
+        <ul>
+          <li>Подавать личный пример</li>
+          <li>Сделать чистку зубов веселой игрой</li>
+          <li>Хвалить за старания</li>
+          <li>Регулярно менять зубную щетку</li>
+          <li>Следить за качеством чистки</li>
+          <li>Контролировать питание</li>
+        </ul>
+      </div>
+
+      <h3>Игровые приемы для приучения к чистке:</h3>
+      <ul>
+        <li><strong>Песенки и стихи</strong> — пойте во время чистки</li>
+        <li><strong>Соревнования</strong> — кто лучше почистит зубы</li>
+        <li><strong>Награды</strong> — календарь чистки с наклейками</li>
+        <li><strong>Игрушки</strong> — чистка зубов куклам</li>
+        <li><strong>Сказки</strong> — истории о здоровых зубах</li>
+      </ul>
+    </section>
+
+    <!-- Финальный слоган -->
+    <section class="card">
+      <div class="highlight" style="text-align: center; padding: 32px;">
+        <h3 style="color: #856404; margin-bottom: 16px;">🌟 Важно помнить!</h3>
+        <p style="font-size: 18px; line-height: 1.6; color: #856404; margin: 0;">
+          <strong>Важно также следить за кальцие-фосфорным обменом ребёнка:</strong><br>
+          Витамин Д (профилактическая доза на постоянной основе в зависимости от вашего региона) утром после еды,<br>
+          кальций по рекомендации врача (при передозировке возможны образования камней в почках)<br>
+          <em>Коралловый кальций НСП в порошке + еще вкусный</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer-note">
+      <p><strong>Методичка по уходу за зубами для детей 0+</strong></p>
+      <p>Версия с изображениями из GitHub репозитория. Все изображения загружаются напрямую из вашего репозитория.</p>
+      <p style="margin-top: 16px; font-size: 12px;">© 2024 | Создано для молодых родителей | Обновлено: декабрь 2024</p>
+    </footer>
+  </div>
+</body>
+</html>
